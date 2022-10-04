@@ -6,13 +6,13 @@ const router = express.Router();
 // @desc    Login / Landing page
 // @route   GET
 router.get('/', (req, res) => {
-  res.send('Hi, this is the login!');
+  res.render('login');
 });
 
 // @desc    Dashboard
 // @route   GET /dashboard
 router.get('/dashboard', (req, res) => {
-  res.send('Dashboard');
+  res.send('dashboard');
 });
 
 module.exports = router;
